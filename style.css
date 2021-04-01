@@ -1,7 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Bellota Text', 'Verdana', Arial, sans-serif;
+}
+
+/* Color scheme sourced from https://www.color-hex.com/color-palette/107368 70s colors color palette */
+:root {
+  --colora: #00a0d9;
+  --colorb: #b800a6;
+  --colorc: #68a549;
+  --colord: #ff4ea6;
+  --colore: #fdcd00;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
+  font-size: 16px;
+  line-height: 1;
+}
   
+.header {
+  padding: 0px;
+  background-color: var(--colord);
+  color: var(--colora);
+  /* position: fixed; */
+  width: 100%;
+}
+
+.header h1 {
+  display: inline-block;
+  font-family: 'Ink Free', sans-serif;
+  font-size: 60px;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+
+
+
+.calendar,
+.map {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: var(--colorc);
+    color: var(--colore);
+}
+
+
+.calendar h2,
+.map h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+
+
+.footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+}
