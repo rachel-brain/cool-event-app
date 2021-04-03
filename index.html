@@ -11,9 +11,9 @@
 
 <body>
     <header class="header">
-        <h1><!-- add icon -->Cool Music Events</h1>
+        <h1>Cool Music Events</h1>
         <nav>
-            <ul><!-- add internal nav links here -->
+            <ul>
                 <li><a href="#xxxxxxxxx">Nav1</a></li>
                 <li><a href="#xxxxxxxxx">Nav2</a></li>
                 <li><a href="#xxxxxxxxx">Nav3</a></li>
@@ -21,7 +21,6 @@
         </nav>
     </header>
 
-<!-- Add a hero image? Crowds & a stage? -->
     <img class="hero" alt=""></img>
 
     <main class="content">
@@ -43,23 +42,27 @@
             <h2>Upcoming events</h2>
             <p>Automated list of events here (5-10) (EventBrite API?) ...</p>            
         </section>
+
     </main>
 
-    <aside class="information">
-        <section class="calendar">
-            <h3>Calendar link - default to current month?</h3>
-            <p><!-- Add calendar here (API?) --></p>
+    <div class="information">
+        <section class="calendar" id="month-grid">
+            <h3>Choose your date</h3>
+            <div data-tockify-component="mini" data-tockify-calendar="cool.app"></div>
         </section>
 
         <section class="map">
-            <h3>Google Maps link - default to Melbourne CBD?</h3>
-            <p><!-- Add google maps here (API?) --></p>
+            <h3>Choose your location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50423.10888319078!2d144.95594994646723!3d-37.82648314313222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1617275375044!5m2!1sen!2sau" 
+            width="540" height="405" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-    </aside>
+    </div>
 
     <footer class="footer">
-        <h4></h4>
+        <h4>This is our footer</h4>
     </footer>
+
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
 </body>
 </html>
