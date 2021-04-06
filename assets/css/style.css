@@ -1,42 +1,37 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
   font-family: 'Bellota Text', 'Verdana', Arial, sans-serif;
 }
 
 /* Color scheme sourced from https://www.color-hex.com/color-palette/107368 70s colors color palette */
 :root {
-  --colora: #00a0d9;
-  --colorb: #b800a6;
-  --colorc: #68a549;
-  --colord: #ff4ea6;
-  --colore: #fdcd00;
+  --colorblue: #00a0d9;
+  --colorpurple: #b800a6;
+  --colorgreen: #68a549;
+  --colorpink: #ff4ea6;
+  --coloryellow: #fdcd00;
 }
 
 body {
-  font-size: 16px;
-  line-height: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .btn {
   font-size: 20px;
-  border: var(--colora);
+  border: 15px solid var(--colorblue);
   border-radius: 10px;
-  border: 15px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--colora);
+  background-color: var(--colorblue);
 }
   
 .header {
   padding: 0px;
-  background-color: var(--colord);
-  color: var(--colora);
+  background-color: var(--colorpink);
+  color: var(--colorblue);
   /* position: fixed; */
-  width: 100%;
   height: 250px;
   background-image: url(../vector-party-crowd-background2.jpg);
   background-repeat: no-repeat;
@@ -47,14 +42,12 @@ body {
 .header-container {
     padding: 0px;
     /* background-color: var(--colord); */
-    color: var(--colora);
+    color: var(--colorblue);
     /* position: fixed; */
-    width: 100%;
     height: 100%;
 }
 
 .header h1 {
-  display: inline-block;
   font-family: 'Ink Free', sans-serif;
   font-size: 60px;
 }
@@ -64,10 +57,10 @@ body {
 }
 
 .header nav {
+  display: flex;
   padding-top: 50px;
   padding-right: 40px;
   margin-right: 20px;
-  float: right;
   font-size: 20px;
 }
 
@@ -82,7 +75,7 @@ body {
 .topnav {
   display: flex;
   padding-left: 20px;
-  color: var(--colora);
+  color: var(--colorblue);
   justify-content: center;
   width: 100%;
 }
@@ -96,16 +89,13 @@ body {
   margin-left: 25px;
 }
 
-
-
-
 .calendar,
 .map {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    background-color: var(--colorc);
-    color: var(--colore);
+    background-color: var(--colorgreen);
+    color: var(--coloryellow);
 }
 
 
@@ -120,6 +110,5 @@ body {
 
 .footer {
   padding: 30px;
-  clear: both;
   text-align: center;
 }
