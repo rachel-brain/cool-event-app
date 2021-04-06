@@ -13,3 +13,8 @@ Project1: the-coolest-event-app-ever by Sean McKay, Jesse Coad & Rachel Brain
 8. Work out to use a calendar - moment.js?
 9. Work out how to save to local storage for saved favourites
 
+
+# sources
+1. https://tockify.com/e/cool.app/monthly
+2. https://www.google.com/maps/@-37.8264831,144.9559499,13z
+3. 
