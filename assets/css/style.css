@@ -1,0 +1,114 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Bellota Text', 'Verdana', Arial, sans-serif;
+}
+
+/* Color scheme sourced from https://www.color-hex.com/color-palette/107368 70s colors color palette */
+:root {
+  --colorblue: #00a0d9;
+  --colorpurple: #b800a6;
+  --colorgreen: #68a549;
+  --colorpink: #ff4ea6;
+  --coloryellow: #fdcd00;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.btn {
+  font-size: 20px;
+  border: 15px solid var(--colorblue);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--colorblue);
+}
+  
+.header {
+  padding: 0px;
+  background-color: var(--colorpink);
+  color: var(--colorblue);
+  /* position: fixed; */
+  height: 250px;
+  background-image: url(../vector-party-crowd-background2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+}
+
+.header-container {
+    padding: 0px;
+    /* background-color: var(--colord); */
+    color: var(--colorblue);
+    /* position: fixed; */
+    height: 100%;
+}
+
+.header h1 {
+  font-family: 'Ink Free', sans-serif;
+  font-size: 60px;
+}
+
+#header-icon {
+  color: black;
+}
+
+.header nav {
+  display: flex;
+  padding-top: 50px;
+  padding-right: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  color: #00FFFF;
+}
+
+.topnav {
+  display: flex;
+  padding-left: 20px;
+  color: var(--colorblue);
+  justify-content: center;
+  width: 100%;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.calendar,
+.map {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: var(--colorgreen);
+    color: var(--coloryellow);
+}
+
+
+.calendar h2,
+.map h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
