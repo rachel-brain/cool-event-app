@@ -1,39 +1,33 @@
 var APITick = "Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv";
 //https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv
 
-$.ajax({
-    type: "GET",
-    url: "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv",
-    async: true,
-    dataType: "json",
-    success: function (json) {
-        console.log(json);
-        // Parse the response.
-        // Do other things.
-    },
-    error: function (xhr, status, err) {
-        // This time, we do not end up here!
-    }
-});
+fetch("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+    return res.json()
+}).then(function (data) {
+    console.log(data)
+})
+
+
+
 // Function to api call based on search string
 //function searchEvent() {
 
-    //var searchUrl = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305" + seachString + APITick;
+//var searchUrl = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305" + seachString + APITick;
 
-   // $.ajax({
-       // url: searchUrl,
-      //  method: "GET"
-      //async: true,
-       // dataType: "json",
-       // success: function (json) {
-           // console.log(json);
-            // Parse the response.
-            // Do other things.
-        //},
-        //error: function (xhr, status, err) {
-            // This time, we do not end up here!
-        //}
-   // });
+// $.ajax({
+// url: searchUrl,
+//  method: "GET"
+//async: true,
+// dataType: "json",
+// success: function (json) {
+// console.log(json);
+// Parse the response.
+// Do other things.
+//},
+//error: function (xhr, status, err) {
+// This time, we do not end up here!
+//}
+// });
 
 
 

@@ -15,33 +15,37 @@
 <body>
     <div class="header-container" id="hero-image">
         <div class="hero-text">
-        <header class="header">
-            <h1 id="page-header"><i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music Events</h1>
-            <div class="topnav">
-            <nav>
-                <ul>
-                    <li><button class="btn"><a href="#search-bar"><i class="fas fa-search"></i> Find a gig</a></button></li>
-                    <li><button class="btn"><a href="#calendar"><i class="far fa-calendar-alt"></i> Calendar</a></button></li>
-                    <li><button class="btn"><a href="#upcoming-events"><i class="fas fa-exclamation-circle"></i> Upcoming events</a></button></li>
-                </ul>
-            </nav>
-            </div>
+            <header class="header">
+                <h1 id="page-header"><i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music Events</h1>
+                <div class="topnav">
+                    <nav>
+                        <ul>
+                            <li><button class="btn"><a href="#search-bar"><i class="fas fa-search"></i> Find a
+                                        gig</a></button></li>
+                            <li><button class="btn"><a href="#calendar"><i class="far fa-calendar-alt"></i>
+                                        Calendar</a></button></li>
+                            <li><button class="btn"><a href="#upcoming-events"><i class="fas fa-exclamation-circle"></i>
+                                        Upcoming events</a></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
         </div>
-        </header>
     </div>
 
     <main class="content">
         <article class="search-bar" id="search-bar">
-            <img src="???" class="float-left" alt="Photo of ???"/>           
+            <img src="???" class="float-left" alt="Photo of ???" />
             <h2>Search bar (TicketMaster API?)</h2>
-            <p>Add a modal here ...</p>            
+            <p>Add a modal here ...</p>
         </article>
 
         <article class="search-results">
             <h2>Results Search container</h2>
             <p>Results populated here with save buttons for user to
                 save those they are interested in</p>
-            <button></button>
+            <!-- TODO: FIX SEARCH BUTTON -->
+            <!-- <button></button> -->
         </article>
 
         <article class="upcoming-events" id="upcoming-events">
@@ -52,22 +56,23 @@
     </main>
 
     <aside class="information">
-        <article class="calendar" id="calendar">
+        <section class="calendar" id="calendar">
             <h3>Calendar:</h3>
-            <div data-tockify-component="calendar" data-tockify-calendar="cool.app" data-tockify-height="400px" data-tockify-width="400px"></div>
-        </article>
+            <div data-tockify-component="calendar" data-tockify-calendar="cool.app" data-tockify-height="400px"
+                data-tockify-width="400px"></div>
+        </section>
 
-        <article class="map">
+        <section class="map">
             <h3>Google Maps:</h3>
-        </article>
+        </section>
     </aside>
 
     <footer class="footer">
         <h4></h4>
     </footer>
 
-<script src="./assets/js/script.js"></script>
-<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
 </body>
 
