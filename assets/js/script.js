@@ -42,3 +42,29 @@ fetch("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&mark
 // function to add saved events to local storage
 // function to load saved events
 // button to clear saved events?
+
+
+
+/* When the user clicks on the button, toggle between hiding and showing the Music genre dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+// Store
+localStorage.setItem("myDropdown", "dropdown-content");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("myDropdown");
