@@ -1,33 +1,62 @@
-var APITick = "Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv";
+var APITick = "apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv";
 //https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv
 
-fetch("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+var searchString = "Reggae"
+
+// Fetch for MUSIC events in MELBOURNE with searchString added 
+fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + searchString + "&" + APITick).then(function (res) {
     return res.json()
 }).then(function (data) {
     console.log(data)
 })
 
 
+// Fetch events in melbourne
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
 
-// Function to api call based on search string
-//function searchEvent() {
+//Fetch music events pop in melbourne only
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Pop&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
 
-//var searchUrl = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&marketId=305" + seachString + APITick;
+// Fetch music events with rock genre id
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAeA&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
 
-// $.ajax({
-// url: searchUrl,
-//  method: "GET"
-//async: true,
-// dataType: "json",
-// success: function (json) {
-// console.log(json);
-// Parse the response.
-// Do other things.
-//},
-//error: function (xhr, status, err) {
-// This time, we do not end up here!
-//}
-// });
+// Fetch music events with reggae genre id
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAed&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
+
+
+
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?genreId=KnvZfZ7vAeA&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
+
+
+
+// fetch("https://app.ticketmaster.com/discovery/v2/classifications.json?apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv",).then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
+
+
+
 
 
 
