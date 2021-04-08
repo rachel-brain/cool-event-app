@@ -15,33 +15,26 @@
 <body>
     <div class="header-container" id="hero-image">
         <div class="hero-text">
-            <header class="header">
-                <h1 id="page-header"><i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music Events</h1>
-                <div class="topnav">
-                    <nav>
-                        <ul>
-                            <!-- add internal nav links here -->
-                            <li><button class="btn"><a href="#search-bar"><i class="fas fa-search"></i> Find a
-                                        gig</a></button></li>
-                            <li><button class="btn"><a href="#calendar"><i class="far fa-calendar-alt"></i>
-                                        Calendar</a></button></li>
-                            <li><button class="btn"><a href="#upcoming-events"><i class="fas fa-exclamation-circle"></i>
-                                        Upcoming events</a></button></li>
-                        </ul>
-                    </nav>
-                </div>
+        <header class="header">
+            <h1 id="page-header"><i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music Events</h1>
+            <div class="topnav">
+            <nav>
+                <ul>
+                    <li><button class="btn"><a href="#search-bar"><i class="fas fa-search"></i> Find a gig</a></button></li>
+                    <li><button class="btn"><a href="#calendar"><i class="far fa-calendar-alt"></i> Calendar</a></button></li>
+                    <li><button class="btn"><a href="#upcoming-events"><i class="fas fa-exclamation-circle"></i> Upcoming events</a></button></li>
+                </ul>
+            </nav>
+            </div>
         </div>
         </header>
     </div>
 
-    <!-- Add a hero image? Crowds & a stage? -->
-    <img class="hero" alt=""></img>
-
     <main class="content">
         <article class="search-bar" id="search-bar">
-            <img src="???" class="float-left" alt="Photo of ???" />
-            <h2>Search bar (EventBrite API?)</h2>
-            <p>Add a modal here ...</p>
+            <img src="???" class="float-left" alt="Photo of ???"/>           
+            <h2>Search bar (TicketMaster API?)</h2>
+            <p>Add a modal here ...</p>            
         </article>
 
         <article class="search-results">
@@ -60,19 +53,12 @@
 
     <aside class="information">
         <article class="calendar" id="calendar">
-            <h3>Calendar link - default to current month?</h3>
-            <p>
-                <!-- Add calendar here (API?) -->
-            </p>
+            <h3>Calendar:</h3>
+            <div data-tockify-component="calendar" data-tockify-calendar="cool.app" data-tockify-height="400px" data-tockify-width="400px"></div>
         </article>
 
         <article class="map">
-            <h3>Google Maps link - default to Melbourne CBD?</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50423.10888319078!2d144.95594994646723!3d-37.82648314313222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1617275375044!5m2!1sen!2sau"></iframe>
-            <p>
-                <!-- Add google maps here (API?) -->
-            </p>
+            <h3>Google Maps:</h3>
         </article>
     </aside>
 
@@ -80,7 +66,8 @@
         <h4></h4>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
+<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
 </body>
 

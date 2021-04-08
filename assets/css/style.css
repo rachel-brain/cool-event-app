@@ -92,21 +92,18 @@ body {
 .calendar,
 .map {
     margin-bottom: 20px;
+    margin-right: 2px;
     padding: 50px;
-    height: 300px;
+    height: 30px;
     background-color: var(--colorgreen);
     color: var(--coloryellow);
 }
-
 
 .calendar h2,
 .map h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-
-
 
 .footer {
   padding: 30px;
