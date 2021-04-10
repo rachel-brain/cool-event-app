@@ -34,32 +34,44 @@
     </div>
 
     <main class="content">
-        <article class="search-bar" id="search-bar">
-            <img src="???" class="float-left" alt="Photo of ???" />
-            <h2>Search bar (TicketMaster API?)</h2>
-            <p>Add a modal here ...</p>
-        </article>
+        <section class="search-box">
+            <h2>Search for a music genre here:</h2>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Genres</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#all-music">All Music</a>
+                    <a href="#alternative-rock">Alternative Rock</a>
+                    <a href="#caberet">Caberet</a>
+                    <a href="#country-folk">Country & Folk</a>
+                    <a href="#dance-electronic">Dance/Electronic</a>
+                    <a href="#festivals">Festivals</a>
+                    <a href="#hardrock-metal">Hard Rock/Metal</a>
+                    <a href="#jazz-blues">Jazz & Blues</a>
+                    <a href="#miscellaneous">Miscellaneous</a>
+                    <a href="#newage-spiritual">New Age & Spiritual</a>
+                    <a href="#r&b-urbansoul">R&B/Urban Soul</a>
+                    <a href="#rap-hiphop">Rap & Hip-Hop</a>
+                    <a href="#rock-pop">Rock & Pop</a>
+                    <a href="#world-music">World Music</a>
+                    <a href="#more-music">More Music</a>
+                </div>
+            </div>
+        </section>
 
-        <article class="search-results">
+        <section class="search-results">
             <h2>Results Search container</h2>
             <p>Results populated here with save buttons for user to
                 save those they are interested in</p>
-            <!-- TODO: FIX SEARCH BUTTON -->
+            <!-- TODO: FIX SAVE BUTTONS? -->
             <!-- <button></button> -->
-        </article>
-
-        <article class="upcoming-events" id="upcoming-events">
-            <img src="???" class="float-right" alt="Photo of ???" />
-            <h2>Upcoming events</h2>
-            <p>Automated list of events here (5-10) (EventBrite API?) ...</p>
-        </article>
+        </section>
     </main>
 
     <aside class="information">
         <section class="calendar" id="calendar">
             <h3>Calendar:</h3>
             <div data-tockify-component="calendar" data-tockify-calendar="cool.app" data-tockify-height="400px"
-                data-tockify-width="400px"></div>
+                data-tockify-width="375px"></div>
         </section>
 
         <section class="map">
@@ -67,8 +79,20 @@
         </section>
     </aside>
 
+    <section class="upcoming-events">
+        <h2>Top 5 suggestions for you:</h2>
+        <!-- Automated list of events here (5 random?) -->
+        <div id="randomList" class="randomList-content">
+            <a href="#top1">Top 1</a>
+            <a href="#top2">Top 2</a>
+            <a href="#top3">Top 3</a>
+            <a href="#top4">Top 4</a>
+            <a href="#top5">Top 5</a>
+        </div>
+    </section>
+
     <footer class="footer">
-        <h4></h4>
+        <h4>Built by SJR</h4>
     </footer>
 
     <script src="./assets/js/script.js"></script>

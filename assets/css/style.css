@@ -1,15 +1,17 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: 'Bellota Text', 'Verdana', Arial, sans-serif;
 }
 
 /* Color scheme sourced from https://www.color-hex.com/color-palette/107368 70s colors color palette */
 :root {
-  --colorblue: #00a0d9;
-  --colorpurple: #b800a6;
-  --colorgreen: #68a549;
-  --colorpink: #ff4ea6;
-  --coloryellow: #fdcd00;
+  --colorBlue: #00a0d9;
+  --colorPurple: #b800a6;
+  --colorGreen: #68a549;
+  --colorPink: #ff4ea6;
+  --colorYellow: #fdcd00;
 }
 
 body {
@@ -18,19 +20,19 @@ body {
 
 .btn {
   font-size: 20px;
-  border: 15px solid var(--colorblue);
+  border: 15px solid var(--colorBlue);
   border-radius: 10px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--colorblue);
+  background-color: var(--colorBlue);
 }
-  
+
 .header {
   padding: 0px;
-  background-color: var(--colorpink);
-  color: var(--colorblue);
+  background-color: var(--colorPink);
+  color: var(--colorBlue);
   /* position: fixed; */
   height: 250px;
   background-image: url(../vector-party-crowd-background2.jpg);
@@ -40,11 +42,11 @@ body {
 }
 
 .header-container {
-    padding: 0px;
-    /* background-color: var(--colord); */
-    color: var(--colorblue);
-    /* position: fixed; */
-    height: 100%;
+  padding: 0px;
+  /* background-color: var(--colord); */
+  color: var(--colorBlue);
+  /* position: fixed; */
+  height: 100%;
 }
 
 .header h1 {
@@ -75,7 +77,7 @@ body {
 .topnav {
   display: flex;
   padding-left: 20px;
-  color: var(--colorblue);
+  color: var(--colorBlue);
   justify-content: center;
   width: 100%;
 }
@@ -91,21 +93,102 @@ body {
 
 .calendar,
 .map {
-    margin-bottom: 20px;
-    margin-right: 2px;
-    padding: 50px;
-    height: 30px;
-    background-color: var(--colorgreen);
-    color: var(--coloryellow);
+  width: 22%;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  padding: 15px;
+  float: right;
+  height: 500px;
+  background-color: var(--colorGreen);
+  color: var(--colorYellow);
 }
 
 .calendar h2,
 .map h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  font-size: 36px;
+}
+
+.search-box {
+  width: 15%;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding: 15px;
+  float: left;
+  height: 500px;
+  background-color: var(--colorYellow);
+  color: var(--colorGreen);
+}
+
+.search-results {
+  width: 37%;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding: 15px;
+  float: left;
+  height: 500px;
+  background-color: var(--colorYellow);
+  color: var(--colorGreen);
+}
+
+/* Code for dropdown music genre choices: */
+.dropbtn {
+  background-color: var(--colorBlue);
+  color: var(--colorPink);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: var(--colorBlue);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  color: var(--colorPink);
+  font-style: italic;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.upcoming-events {
+  width: 100%;
+  padding: 16px;
+  bottom: 10px;
+  height: 250px;
+  background-color: var(--colorBlue);
+  color: var(--colorPurple);
 }
 
 .footer {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  clear: both;
 }
