@@ -3,12 +3,16 @@ var APITick = "apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv";
 
 var searchString = "Reggae"
 
-// Fetch for MUSIC events in MELBOURNE with searchString added 
-fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + searchString + "&" + APITick).then(function (res) {
-    return res.json()
-}).then(function (data) {
-    console.log(data)
-})
+const button = document.getElementById('getallmusic');
+
+// var getAllMusicbtn = getElementById('getAllMusicbtn')
+
+// Fetch for MUSIC events in MELBOURNE with searchString added
+// fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + searchString + "&" + APITick).then(function (res) {
+//     return res.json()
+// }).then(function (data) {
+//     console.log(data)
+// })
 
 
 // Fetch events in melbourne
@@ -18,26 +22,53 @@ fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=30
 //     console.log(data)
 // })
 
+// Gets all music events
+function getAllmusic() {
+    fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + "&" + APITick).then(function (res) {
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+
+}
+
 //Fetch music events pop in melbourne only
-// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Pop&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
-//     return res.json()
-// }).then(function (data) {
-//     console.log(data)
-// })
+function getallPop() {
+    fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Pop&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+}
 
 // Fetch music events with rock genre id
-// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAeA&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
-//     return res.json()
-// }).then(function (data) {
-//     console.log(data)
-// })
+function getallRock() {
+    fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAeA&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+}
 
 // Fetch music events with reggae genre id
-// fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAed&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
-//     return res.json()
-// }).then(function (data) {
-//     console.log(data)
-// })
+function getallReaggae() {
+    fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAed&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+}
+
+//Fetch Hip hop
+function getallHipHop() {
+    fetch("https://app.ticketmaster.com/discovery/v2/events.json?classificationName=Music&genreId=KnvZfZ7vAv1&countryCode=AU&marketId=305&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv").then(function (res) {
+        return res.json()
+    }).then(function (data) {
+        console.log(data)
+    })
+}
+
+
 
 
 
@@ -97,3 +128,33 @@ window.onclick = function (event) {
 localStorage.setItem("myDropdown", "dropdown-content");
 // Retrieve
 document.getElementById("result").innerHTML = localStorage.getItem("myDropdown");
+
+// getAllMusicbtn.addEventListener("click", getAllmusic())
+
+// document.getElementById('getAllMusicbtn').addEventListener('click', getAllmusic);
+// document.getElementById("getallmusic").addEventListener("click", getAllmusic);
+
+
+// Gets all music events
+// function getAllmusic() {
+//     fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + "&" + APITick).then(function (res) {
+//         return res.json()
+//     }).then(function (data) {
+//         console.log(data)
+//     })
+
+// }
+
+
+
+
+
+
+// button.addEventListener('click', function getAllmusic() {
+//     fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + searchString + "&" + APITick).then(function (res) {
+//         return res.json()
+//     }).then(function (data) {
+//         console.log(data)
+//     })
+
+// }
