@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Bellota Text', 'Verdana', Arial, sans-serif;
 }
 
 /* Color scheme sourced from https://www.color-hex.com/color-palette/107368 70s colors color palette */
@@ -35,7 +34,6 @@ body {
   color: var(--colorBlue);
   /* position: fixed; */
   height: 250px;
-  background-image: url(../vector-party-crowd-background2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: cover;
@@ -50,8 +48,28 @@ body {
 }
 
 .header h1 {
-  font-family: 'Ink Free', sans-serif;
+  font-family: "Ink Free", sans-serif;
   font-size: 60px;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in;
+}
+
+header li a:hover {
+  color: black;
+  transition: all 0.5s ease-in;
+}
+
+header li a i {
+  color: yellow;
+  margin-top: 16px;
+  font-size: 32px;
 }
 
 #header-icon {
@@ -71,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 .topnav {

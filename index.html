@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Cool Events</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header-container" id="hero-image">
-        <div class="hero-text">
-            <header class="header">
-                <h1 id="page-header"><i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music Events</h1>
-                <div class="topnav">
-                    <nav>
-                        <ul>
-                            <li><button class="btn"><a href="#search-bar"><i class="fas fa-search"></i> Find a
-                                        gig</a></button></li>
-                            <li><button class="btn"><a href="#calendar"><i class="far fa-calendar-alt"></i>
-                                        Calendar</a></button></li>
-                            <li><button class="btn"><a href="#upcoming-events"><i class="fas fa-exclamation-circle"></i>
-                                        Upcoming events</a></button></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </div>
+      <div class="hero-text">
+        <header class="header">
+          <h1 id="page-header">
+            <i class="fas fa-record-vinyl" id="header-icon"></i>Cool Music
+            Events
+          </h1>
+          <div class="topnav">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#search-bar"
+                    ><p>Find a gig</p>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#calendar"
+                    ><p>Calendar</p>
+                    <i class="fa fa-calendar"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#upcoming-events">
+                    <p>Upcoming events</p>
+                    <i class="fa fa-exclamation-circle"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
     </div>
 
     <main class="content">
-        <section class="search-box">
-            <h2>Search for a music genre here:</h2>
+      <section class="search-box">
+        <h2>Search for a music genre here:</h2>
 
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Genres</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <button onclick="getAllmusic()">All Music </button>
-                    <button onclick="getallPop()">Pop </button>
-                    <button onclick="getallRock()">Rock </button>
-                    <button onclick="getallReaggae()">Reggae</button>
-                    <button onclick="getallHipHop()">HipHop</button>
-                    <!-- <a href="#all-music">All Music</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Genres</button>
+          <div id="myDropdown" class="dropdown-content">
+            <button onclick="getAllmusic()">All Music</button>
+            <button onclick="getallPop()">Pop</button>
+            <button onclick="getallRock()">Rock</button>
+            <button onclick="getallReaggae()">Reggae</button>
+            <button onclick="getallHipHop()">HipHop</button>
+            <!-- <a href="#all-music">All Music</a>
                     <a href="#alternative-rock">Alternative Rock</a>
                     <a href="#caberet">Caberet</a>
                     <a href="#country-folk">Country & Folk</a>
@@ -60,50 +77,58 @@
                     <a href="#rock-pop">Rock & Pop</a>
                     <a href="#world-music">World Music</a>
                     <a href="#more-music">More Music</a> -->
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="search-results">
-            <h2>Results Search container</h2>
-            <p>Results populated here with save buttons for user to
-                save those they are interested in</p>
-            <!-- TODO: FIX SAVE BUTTONS? -->
-            <!-- <button></button> -->
-        </section>
+      <section class="search-results">
+        <h2>Results Search container</h2>
+        <p>
+          Results populated here with save buttons for user to save those they
+          are interested in
+        </p>
+        <!-- TODO: FIX SAVE BUTTONS? -->
+        <!-- <button></button> -->
+      </section>
     </main>
 
     <aside class="information">
-        <section class="calendar" id="calendar">
-            <h3>Calendar:</h3>
-            <div data-tockify-component="calendar" data-tockify-calendar="cool.app" data-tockify-height="400px"
-                data-tockify-width="375px"></div>
-        </section>
+      <section class="calendar" id="calendar">
+        <h3>Calendar:</h3>
+        <div
+          data-tockify-component="calendar"
+          data-tockify-calendar="cool.app"
+          data-tockify-height="400px"
+          data-tockify-width="375px"
+        ></div>
+      </section>
 
-        <section class="map">
-            <h3>Google Maps:</h3>
-        </section>
+      <section class="map">
+        <h3>Google Maps:</h3>
+      </section>
     </aside>
 
     <section class="upcoming-events">
-        <h2>Top 5 suggestions for you:</h2>
-        <!-- Automated list of events here (5 random?) -->
-        <div id="randomList" class="randomList-content">
-            <a href="#top1">Top 1</a>
-            <a href="#top2">Top 2</a>
-            <a href="#top3">Top 3</a>
-            <a href="#top4">Top 4</a>
-            <a href="#top5">Top 5</a>
-        </div>
+      <h2>Top 5 suggestions for you:</h2>
+      <!-- Automated list of events here (5 random?) -->
+      <div id="randomList" class="randomList-content">
+        <a href="#top1">Top 1</a>
+        <a href="#top2">Top 2</a>
+        <a href="#top3">Top 3</a>
+        <a href="#top4">Top 4</a>
+        <a href="#top5">Top 5</a>
+      </div>
     </section>
 
     <footer class="footer">
-        <h4>Built by SJR</h4>
+      <h4>Built by SJR</h4>
     </footer>
 
     <script src="./assets/js/script.js"></script>
-    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-
-</body>
-
+    <script
+      data-cfasync="false"
+      data-tockify-script="embed"
+      src="https://public.tockify.com/browser/embed.js"
+    ></script>
+  </body>
 </html>
