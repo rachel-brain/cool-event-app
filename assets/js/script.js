@@ -1,5 +1,8 @@
 var APITick = "apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv";
 //https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=Adw3d81D9BpgpPWZC0f4HbYja3X6P9Vv
+var mapEl = document.getElementById("map-container")
+var mapAPIKey = "ff6e39ae57msh101f348ba7554fep1b4d1ejsnaf830f19baf8"
+var calendarEl = document.getElementById("calendar")
 
 var searchString = "Reggae"
 
@@ -146,10 +149,6 @@ document.getElementById("result").innerHTML = localStorage.getItem("myDropdown")
 // }
 
 
-
-
-
-
 // button.addEventListener('click', function getAllmusic() {
 //     fetch("https://app.ticketmaster.com/discovery/v2/events.json?Code=AU&marketId=305&classificationName=" + searchString + "&" + APITick).then(function (res) {
 //         return res.json()
@@ -158,3 +157,25 @@ document.getElementById("result").innerHTML = localStorage.getItem("myDropdown")
 //     })
 
 // }
+
+function getMapData() {
+	fetch("https://maptiles.p.rapidapi.com/local/osm/v1/3/6/3.png", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "ff6e39ae57msh101f348ba7554fep1b4d1ejsnaf830f19baf8",
+		"x-rapidapi-host": "maptiles.p.rapidapi.com"
+	}
+}).then(function (response){
+	return response.json();
+}).then(function (data) {
+	appendData(data).mapEl;
+}).catch(function (error) {
+	console.log(error)
+})
+}
+
+function displayMapData(data) {
+	mapEl = data.getMapData
+}
+
+getMapData()

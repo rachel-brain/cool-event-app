@@ -13,6 +13,7 @@
   --colorYellow: #fdcd00;
 }
 
+
 html,
 body {
   display: flex;
@@ -24,6 +25,7 @@ body {
 .header-container {
   flex: 0 1 auto;
   color: var(--colorBlue);
+
 }
 .page-content {
   display: flex;
@@ -44,12 +46,15 @@ body {
   padding: 0px;
   background-color: var(--colorPink);
   color: var(--colorBlue);
+
   /* position: fixed; */
   height: 250px;
+
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: cover;
 }
+
 
 .header h1 {
   font-family: "Ink Free", sans-serif;
@@ -116,15 +121,19 @@ header li a i {
 .upcoming-events {
   width: 100%;
   padding: 16px;
+
   bottom: 10px;
   height: 250px;
+
   background-color: var(--colorBlue);
   color: var(--colorPurple);
 }
 
+
 #left,
 #right {
   width: 48%;
+
 }
 
 .search-container,
@@ -139,6 +148,7 @@ header li a i {
   background-color: var(--colorGreen);
 }
 
+
 .search-container h2,
 .results-container h2,
 .calendar-container h2 {
@@ -148,9 +158,11 @@ header li a i {
 }
 
 .input {
+
   width: 100%;
   border: none;
   margin: 4px 0;
   padding: 4px;
   font-size: 16px;
 }
+
