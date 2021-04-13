@@ -442,7 +442,7 @@ function getallReaggae() {
 function displayAllReaggae(data) {
   console.log(data);
   //Event Name 1
-  const displayMusic = data._embedded.events[1];
+  const displayMusic = data._embedded.events[0];
   const allMusicname = document.getElementById("search-result1-name");
   const eventName = displayMusic.name;
   const heading = document.createElement("h1");
@@ -484,7 +484,7 @@ function displayAllReaggae(data) {
 
   // Part 3
   // event 3
-  const displayMusic3 = data._embedded.events[3];
+  const displayMusic3 = data._embedded.events[1];
   const allMusicname3 = document.getElementById("search-result3-name");
   const eventName3 = displayMusic3.name;
   const heading3 = document.createElement("h1");
@@ -505,7 +505,7 @@ function displayAllReaggae(data) {
 
   // Part 4
   // event 4
-  const displayMusic4 = data._embedded.events[15];
+  const displayMusic4 = data._embedded.events[0];
   const allMusicname4 = document.getElementById("search-result4-name");
   const eventName4 = displayMusic4.name;
   const heading4 = document.createElement("h1");
