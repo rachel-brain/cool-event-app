@@ -530,32 +530,32 @@ function displayAllReaggae(data) {
 //   searchtext.style.display = "block";
 // }
 
-function getMapData() {
-  fetch("https://maptiles.p.rapidapi.com/local/osm/v1/3/6/3.png", {
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": "ff6e39ae57msh101f348ba7554fep1b4d1ejsnaf830f19baf8",
-      "x-rapidapi-host": "maptiles.p.rapidapi.com",
-    },
-  })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      appendData(data).mapEl;
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-}
+// Unable to resolve this
+// function getMapData() {
+//   fetch("https://maptiles.p.rapidapi.com/local/osm/v1/3/6/3.png", {
+//     method: "GET",
+//     headers: {
+//       "x-rapidapi-key": "ff6e39ae57msh101f348ba7554fep1b4d1ejsnaf830f19baf8",
+//       "x-rapidapi-host": "maptiles.p.rapidapi.com",
+//     },
+//   })
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       appendData(data).mapEl;
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+// }
 
-function displayMapData(data) {
-  mapEl = data.getMapData;
-}
+// function displayMapData(data) {
+//   mapEl = data.getMapData();
+// }
 
-getMapData();
-displayMapData();
-
+// getMapData();
+// displayMapData();
 
 document
   .getElementById("displayAllmusic")
@@ -564,7 +564,6 @@ document
 document
   .getElementById("displayAllmusic")
   .addEventListener("click", unhidetext12);
-
 
 document
   .getElementById("displayAllmusic")
