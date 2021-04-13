@@ -138,9 +138,6 @@ header li a i {
   margin: 8px;
   padding: 8px;
 }
-#results-container {
-  display: block;
-}
 
 .calendar-container {
   background-color: var(--colorGreen);
@@ -192,6 +189,26 @@ header li a i {
   margin: 4px 0;
   padding: 4px;
   font-size: 16px;
+}
+
+
+/* #search-result1-name,
+#search-result1-price,
+#search-result1-date,
+#search-result2-name,
+#search-result2-price,
+#search-result2-date,
+#search-result3-name,
+#search-result3-price,
+#search-result3-date,
+#search-result4-name,
+#search-result4-price,
+#search-result4-date {
+  display: none;
+} */
+
+.results-container-returned {
+  display: none;
 }
 
 .map-container {

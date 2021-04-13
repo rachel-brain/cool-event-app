@@ -20,6 +20,7 @@ document
 document
   .getElementById("displayReggae")
   .addEventListener("click", getallReaggae);
+
 // Call API for all music
 function getAllmusic() {
   fetch(
@@ -220,7 +221,6 @@ function displayAllPop(data) {
   const actualdate4 = document.createElement("h4");
   actualdate4.innerHTML = eventDate4;
   localDate4.appendChild(actualdate4);
-  hideText;
 }
 // Call api for rock/metal
 function getAllRock() {
@@ -525,10 +525,10 @@ function displayAllReaggae(data) {
   localDate4.appendChild(actualdate4);
 }
 
-function hideText() {
-  var searchtext = document.getElementById("results-container-1");
-  searchtext.style.display = "none";
-}
+// function hideText() {
+//   var searchtext = document.getElementById("results-container-1");
+//   searchtext.style.display = "block";
+// }
 
 function getMapData() {
   fetch("https://maptiles.p.rapidapi.com/local/osm/v1/3/6/3.png", {
@@ -554,4 +554,68 @@ function displayMapData(data) {
 }
 
 getMapData();
-displayMapData();
+
+
+document
+  .getElementById("displayAllmusic")
+  .addEventListener(
+    "click",
+    unhidetext11,
+    unhidetext12,
+    unhidetext13,
+    unhidetext14
+  );
+document
+  .getElementById("displayAllPop")
+  .addEventListener(
+    "click",
+    unhidetext11,
+    unhidetext12,
+    unhidetext13,
+    unhidetext14
+  );
+document
+  .getElementById("displayAllRock")
+  .addEventListener(
+    "click",
+    unhidetext11,
+    unhidetext12,
+    unhidetext13,
+    unhidetext14
+  );
+document
+  .getElementById("displayAllHiphop")
+  .addEventListener(
+    "click",
+    unhidetext11,
+    unhidetext12,
+    unhidetext13,
+    unhidetext14
+  );
+document
+  .getElementById("displayAllReggae")
+  .addEventListener(
+    "click",
+    unhidetext11,
+    unhidetext12,
+    unhidetext13,
+    unhidetext14
+  );
+
+function unhidetext11() {
+  const searchtext = document.getElementById("search-result1");
+  searchtext.style.display = "block";
+}
+function unhidetext12() {
+  const searchtext2 = document.getElementById("search-result2");
+  searchtext2.style.display = "block";
+}
+function unhidetext13() {
+  const searchtext3 = document.getElementById("search-result3");
+  searchtext3.style.display = "block";
+}
+function unhidetext14() {
+  const searchtext4 = document.getElementById("search-result4");
+  searchtext4.style.display = "block";
+}
+
