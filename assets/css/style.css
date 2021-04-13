@@ -193,3 +193,9 @@ header li a i {
   padding: 4px;
   font-size: 16px;
 }
+
+.map-container {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}

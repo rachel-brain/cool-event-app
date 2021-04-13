@@ -554,3 +554,4 @@ function displayMapData(data) {
 }
 
 getMapData();
+displayMapData();
