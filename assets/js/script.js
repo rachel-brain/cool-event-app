@@ -555,6 +555,7 @@ function displayMapData(data) {
 
 getMapData();
 
+
 document
   .getElementById("displayAllmusic")
   .addEventListener(
@@ -617,3 +618,4 @@ function unhidetext14() {
   const searchtext4 = document.getElementById("search-result4");
   searchtext4.style.display = "block";
 }
+

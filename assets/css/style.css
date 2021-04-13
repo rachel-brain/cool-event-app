@@ -191,6 +191,7 @@ header li a i {
   font-size: 16px;
 }
 
+
 /* #search-result1-name,
 #search-result1-price,
 #search-result1-date,
@@ -208,4 +209,10 @@ header li a i {
 
 .results-container-returned {
   display: none;
+}
+
+.map-container {
+  display: flex;
+  padding: 8px;
+  width: 100%;
 }
