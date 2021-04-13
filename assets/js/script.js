@@ -555,52 +555,58 @@ function displayMapData(data) {
 
 getMapData();
 
+document
+  .getElementById("displayAllmusic")
+  .addEventListener("click", unhidetext11);
 
 document
   .getElementById("displayAllmusic")
-  .addEventListener(
-    "click",
-    unhidetext11,
-    unhidetext12,
-    unhidetext13,
-    unhidetext14
-  );
+  .addEventListener("click", unhidetext12);
+
 document
-  .getElementById("displayAllPop")
-  .addEventListener(
-    "click",
-    unhidetext11,
-    unhidetext12,
-    unhidetext13,
-    unhidetext14
-  );
+  .getElementById("displayAllmusic")
+  .addEventListener("click", unhidetext13);
 document
-  .getElementById("displayAllRock")
-  .addEventListener(
-    "click",
-    unhidetext11,
-    unhidetext12,
-    unhidetext13,
-    unhidetext14
-  );
+  .getElementById("displayAllmusic")
+  .addEventListener("click", unhidetext14);
+
+document.getElementById("displayRock").addEventListener("click", unhidetext11);
+
+document.getElementById("displayRock").addEventListener("click", unhidetext12);
+
+document.getElementById("displayRock").addEventListener("click", unhidetext13);
+document.getElementById("displayRock").addEventListener("click", unhidetext14);
+
+document.getElementById("displayPop").addEventListener("click", unhidetext11);
+
+document.getElementById("displayPop").addEventListener("click", unhidetext12);
+
+document.getElementById("displayPop").addEventListener("click", unhidetext13);
+document.getElementById("displayPop").addEventListener("click", unhidetext14);
 document
-  .getElementById("displayAllHiphop")
-  .addEventListener(
-    "click",
-    unhidetext11,
-    unhidetext12,
-    unhidetext13,
-    unhidetext14
-  );
+  .getElementById("displayHiphop")
+  .addEventListener("click", unhidetext11);
 document
-  .getElementById("displayAllReggae")
-  .addEventListener(
-    "click",
-    unhidetext11,
-    unhidetext12,
-    unhidetext13,
-    unhidetext14
-  );
+  .getElementById("displayHiphop")
+  .addEventListener("click", unhidetext12);
+document
+  .getElementById("displayHiphop")
+  .addEventListener("click", unhidetext13);
+document
+  .getElementById("displayHiphop")
+  .addEventListener("click", unhidetext14);
+document
+  .getElementById("displayReaggae")
+  .addEventListener("click", unhidetext11);
+document
+  .getElementById("displayReaggae")
+  .addEventListener("click", unhidetext12);
+document
+  .getElementById("displayReaggae")
+  .addEventListener("click", unhidetext13);
+document
+  .getElementById("displayReaggae")
+  .addEventListener("click", unhidetext14);
 
 function unhidetext11() {
   const searchtext = document.getElementById("search-result1");
@@ -618,4 +624,3 @@ function unhidetext14() {
   const searchtext4 = document.getElementById("search-result4");
   searchtext4.style.display = "block";
 }
-
