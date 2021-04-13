@@ -156,7 +156,7 @@ header li a i {
   font-family: "Ink Free", sans-serif;
 }
 
-.results-container-1 {
+.results-container1 {
   display: flex;
   font-size: 24;
   border: 5px, solid, black;
@@ -191,7 +191,6 @@ header li a i {
   font-size: 16px;
 }
 
-
 /* #search-result1-name,
 #search-result1-price,
 #search-result1-date,
@@ -209,10 +208,16 @@ header li a i {
 
 .results-container-returned {
   display: none;
+  background-color: var(--colorPink);
+  margin: 8px;
+  padding: 8px;
 }
 
 .map-container {
   display: flex;
   padding: 8px;
   width: 100%;
+}
+.search-result1 {
+  border: 4px, solid, white;
 }
