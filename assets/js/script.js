@@ -554,6 +554,8 @@ function displayMapData(data) {
 }
 
 getMapData();
+displayMapData();
+
 
 document
   .getElementById("displayAllmusic")
@@ -562,6 +564,7 @@ document
 document
   .getElementById("displayAllmusic")
   .addEventListener("click", unhidetext12);
+
 
 document
   .getElementById("displayAllmusic")
