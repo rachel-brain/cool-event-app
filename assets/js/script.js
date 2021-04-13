@@ -554,7 +554,7 @@ function displayMapData(data) {
 }
 
 getMapData();
-
+displayMapData();
 
 document
   .getElementById("displayAllmusic")
