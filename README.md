@@ -2,7 +2,7 @@
 Project1: the-coolest-event-app-ever by Sean McKay, Jesse Coad & Rachel Brain
 
 
-# initial tasks
+## initial tasks
 1. Initial html page - with links
 2. Initial css page with standard styling
 3. Header & nav bar
@@ -13,3 +13,16 @@ Project1: the-coolest-event-app-ever by Sean McKay, Jesse Coad & Rachel Brain
 8. Work out to use a calendar - moment.js?
 9. Work out how to save to local storage for saved favourites
 
+## User Story
+
+WHEN I want to find an event
+THEN I can search by location, date or music genre
+
+WHEN I find and event I would like to attend
+THEN I can see ticket prices and dates
+
+WHEN I book an event
+THEN I can save the event to a calendar
+
+WHEN I reopen the page
+THEN My selected events in the calendar are persistent
