@@ -6,7 +6,7 @@ Project1: the-coolest-event-app-ever by Sean McKay, Jesse Coad & Rachel Brain
 
 ### Repo at [Github](https://github.com/JWCoad/Weather-Dashboard)
 
-### Screenshot of page ![Screenshot](https://github.com/rachel-brain/cool-event-app/tree/main/assets/images/screenshotdeployed.jpg)
+### Screenshot of page ![Screenshot](https://github.com/rachel-brain/cool-event-app/blob/main/assets/images/screenshotdeployed.JPG)
 
 ### Resources used:
 
